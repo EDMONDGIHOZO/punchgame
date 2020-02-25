@@ -2,15 +2,26 @@ new Vue ({
 
     el : '#vue-app',
     data: {
-        issue: [
-            {title: 'title here', content: 'contents here'},
-            {title: 'title here', content: 'contents here'},
-            {title: 'title here', content: '<i>the contents around </i>'}
-        ]
+       health: 100, 
+       ended: false
+
 
     },
     methods: {
-      
+        punch: function(){
+            this.health -= 10;
+
+            if(this.health <= 0){
+                this.ended = true
+            }
+        },
+        restart: function(){
+            this.health = 100;
+            this.ended = false;
+        }
+    }, 
+    computed: {
+
     }
 
 });     

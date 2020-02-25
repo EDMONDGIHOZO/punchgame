@@ -10,16 +10,30 @@
 </head>
 <body>
 
-<!-- bag image -->
+<div id="vue-app">
+    <!-- bag image -->
+<div id="bag">
 
+</div>
 
 
 <!--bag health  -->
-
+<div id="bag-health">
+    <div v-bind:style="{width:health + '%'}"></div>
+</div>
 
 
 <!-- game controls-->
+<div id="controls">
+    <button v-on:click="punch" v-show="!ended">
+        PUNCH
+    </button>
 
+    <button v-on:click="restart">
+        RESTART
+    </button>
+</div>
+</div>
 
 
 

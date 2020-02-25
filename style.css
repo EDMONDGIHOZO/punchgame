@@ -1,19 +1,25 @@
-body{
-    padding: 40px; 
+#bag{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(/img/bag.png) center no-repeat;
+    background-size: 80%;
+} 
+
+#bag-health{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
 }
 
-
-#canvas{
-    width: 500px;
-    height: 340px;
-    border-color: blueviolet;
-    border-radius: 12px;
-    border-style: solid;
+#bag-health div{
+    height: 20px;
+    background: crimson;
 }
 
-
-
-.pop .subscribe-form{
-    color: red;
-    display: none;
+#controls{
+    width: 120px;
+    margin: 0;
 }
+
+#bag
