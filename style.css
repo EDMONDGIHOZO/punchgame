@@ -1,0 +1,19 @@
+body{
+    padding: 40px; 
+}
+
+
+#canvas{
+    width: 500px;
+    height: 340px;
+    border-color: blueviolet;
+    border-radius: 12px;
+    border-style: solid;
+}
+
+
+
+.pop .subscribe-form{
+    color: red;
+    display: none;
+}
